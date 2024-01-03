@@ -2,16 +2,16 @@
 class Person {
 	constructor(name, age)
 	{
-		this.name = name;
-		this.age = age;
+		this._name = name;
+		this._age = age;
 	}
 
 	get name(){
-		return this.name;
+		return this._name;
 	}
 
 	set age(value){
-		this.age = value;
+		this._age = value;
 	}
 }
 
@@ -27,7 +27,7 @@ class Teacher extends Person {
 	}
 }
 
-const Person = new Person("John", 25);
+// const Person = new Person("John", 25);
 
 // Do not change the code below this line
 window.Person = Person;
